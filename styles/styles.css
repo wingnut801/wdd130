@@ -1,3 +1,11 @@
+:root {
+  --heading-background-color: #00a2ff;
+  --heading-text-color: #333;
+  --heading-font: 'Montserrat', Helvetica, sans-serif;
+  --padding: 1rem;
+  --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 nav {
  background-color: darkblue;
  padding: 10px;   
@@ -8,7 +16,10 @@ nav a {
   padding: 20px;  
 }
 h1 {
-  color: darkblue;  
+  background-color: var(--heading-background-color);
+  color: var(--heading-text-color);
+  font-family: var(--heading-font);
+  padding: var(--padding);    
 }
 img {
  width: 150px;
@@ -27,9 +38,10 @@ aside {
   width: 20rem;
   margin: 1rem;
   border: 1px solid rgb(0 0 0 /0.2); /* 1️⃣ */
-  padding: 1rem;
-  background-color: #eee;
+  padding: var(--padding);
+  background-color: hsl(21, 59%, 53%);
   color: #333;
+  font-family: var(--heading-font);
   text-align: center;  
 }
 aside img {
