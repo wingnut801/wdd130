@@ -1,3 +1,10 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --heading-background-color: #00a2ff;
   --heading-text-color: #333;
