@@ -8,7 +8,7 @@
 
 nav {
  background-color: darkblue;
- padding: 10px;   
+ padding: 6px;   
 }
 nav a {
   color: white;
@@ -16,6 +16,7 @@ nav a {
   padding: 20px;  
 }
 h1 {
+  display: inline-block;
   background-color: var(--heading-background-color);
   color: var(--heading-text-color);
   font-family: var(--heading-font);
@@ -44,17 +45,31 @@ aside {
   font-family: var(--heading-font);
   text-align: center;  
 }
+aside h2 {
+  position:absolute;
+  left: 150px;
+}
 aside img {
   width: 200px;
   height: auto;  
 }
 main img {
   width: 150px;
-  height: auto;  
+  height: auto;
+  float: right;  
 }
 p { padding: 0;}
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;  
+}
+/* Class Selectors */
+.box {
+  display: inline-block;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
