@@ -1,0 +1,149 @@
+/* Root Variables */ 
+:root {
+    --primary-color: #204D6F;      /* Primary color */
+    --secondary-color: #564A7B;   /* Secondary color */
+    --accent1-color: #89985D;     /* Accent color 1 */
+    --accent2-color: #E4CEA4;     /* Accent color 2 */
+    --heading-font: 'Sriracha', cursive; /* Heading font */
+    --text-font: 'Lexend', sans-serif;   /* Text font */
+}
+
+/* Global Styles */
+body {
+    font-family: var(--text-font);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: white;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 50vh;
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: var(--accent2-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding to ensure content stays inside */
+    box-sizing: border-box; /* Include padding in height calculation */
+    border: 1px solid var(--secondary-color); /* Optional: Add a border for visual clarity */
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.hero article {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    margin-top: 20px; /* Add margin to space it below the heading */
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    z-index: 1; /* Ensure it stays above the background */
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Adventure Gallery */
+.adventure .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.adventure .gallery img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+footer .sociallinks img:hover {
+    transform: scale(1.1);
+}
