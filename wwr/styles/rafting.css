@@ -21,19 +21,21 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     background-color: var(--secondary-color);
     padding: 20px;
     color: white;
+    text-align: left;
 }
 
 header .logo img {
     height: 100px;
+    margin-bottom: 20px;
 }
 
 header nav a {
-    color: white;
+    color: var(--accent2-color);
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
@@ -54,9 +56,9 @@ header nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Add padding to ensure content stays inside */
-    box-sizing: border-box; /* Include padding in height calculation */
-    border: 1px solid var(--secondary-color); /* Optional: Add a border for visual clarity */
+    padding: 20px; 
+    box-sizing: border-box; 
+    border: 1px solid var(--secondary-color);
 }
 
 .hero h1 {
@@ -77,11 +79,11 @@ header nav a:hover {
     justify-content: space-between;
     gap: 20px;
     position: relative;
-    margin-top: 20px; /* Add margin to space it below the heading */
+    margin-top: 20px; 
     width: 80%;
     max-width: 600px;
     text-align: left;
-    z-index: 1; /* Ensure it stays above the background */
+    z-index: 1; 
 }
 
 .hero article img {
