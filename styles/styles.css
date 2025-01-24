@@ -60,13 +60,27 @@ footer {
   text-align: center;
   padding-top: 0.5rem;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
+
+.content-container{
   max-width: 840px;
   margin: 1rem auto;
-  align-items: start;
+}
+.grid-aside {
+ float: left;
+ width: 25%;
+ margin: 1rem;
+ min-width: 200px;
+ box-sizing: border-box;
+}
+.grid-main {
+  float: left;
+  width: 65%;
+  min-width: 300px;
+  margin: 1rem;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
 }
 
 aside {
@@ -85,10 +99,10 @@ aside h2 {
   padding: 0.5rem;
 }
 aside img {
-  width: 250px;
+  width: 150px;
   height: auto;
   border: 1px solid black; /* Fixed border */
-  padding: 2px;
+  padding: 1px;
   box-shadow: 0 0 30px gray;
   margin-bottom: 1rem;
 }
