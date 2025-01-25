@@ -62,18 +62,21 @@ p {
 .grid {
   display: grid; /* Flexbox for two-column layout */
   align-items: center;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 34% 64%;
+  grid-template-rows: 1fr;
   gap: 1rem; /* Space between aside and main */
+  height: 100%;
 }
 
 /* Aside Styling */
 aside {
-  flex: 1; /* Make aside take up part of the space */
+  /* flex: auto; Make aside take up part of the space */
   position: relative;
-  border: var(--border);
+  /* border: var(--border); */
   padding: var(--padding);
   background-color: #f8f8f8;
   text-align: center;
+  height: 100%;
 }
 aside h2{
 position: absolute;
@@ -94,9 +97,10 @@ aside img {
 /* Main Content Styling */
 main {
   flex: 3; /* Make main content take up more space */
-  border: var(--border);
+  /* border: var(--border); */
   padding: var(--padding);
   background-color: #ffffff;
+  height: 100%;
 }
 
 main img {
