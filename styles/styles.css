@@ -12,104 +12,63 @@
   --border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
+/* Shared Styles for Header, Footer, and Grid */
+header,
+footer,
+.grid {
+  max-width: 840px;
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Header Specific Styling */
+header {
+  text-align: center;
+}
+
 nav {
   background-color: rgba(30, 37, 46, 0.746);
   padding: 1rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;   
+  justify-content: space-evenly; /* Space links evenly */
+  align-items: center;
 }
 
 nav a {
   color: rgb(255, 255, 255);
-  display: block;
-  padding: 0.5rem;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-}
-
-h1 {
-  display: inline-block;
-  background-color: var(--heading-background-color);
-  color: var(--heading-text-color);
-  font-family: var(--heading-font);
-  padding: var(--padding);
-  border: #000;    
-}
-
-h2 {
-  font-family: var(--heading-font);
-  margin-bottom: 0.5rem;
-}
-
-p {
-  padding: 0; /* Consolidated */
-  line-height: 1.4;
-}
-
-header, 
-footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-  padding-top: 0.5rem;
-}
-
-.content-container{
-  max-width: 840px;
-  margin: 1rem auto;
-}
-.grid-aside {
- float: left;
- width: 25%;
- margin: 1rem;
- min-width: 200px;
- box-sizing: border-box;
-}
-.grid-main {
-  float: left;
-  width: 65%;
-  min-width: 300px;
-  margin: 1rem;
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  
-}
-
-aside {
-  position: relative;
-  border: var(--border);
-  padding: var(--padding);
-  background-color: hsl(21, 59%, 53%);
-  color: hwb(0 100% 0%);
-  font-family: var(--heading-font);
-  text-align: center;  
-}
-aside h2 {
-  position: absolute;
-  top: 3rem;
-  left: 35%;
   padding: 0.5rem;
 }
+
+/* Grid Layout for Aside and Main */
+.grid {
+  display: flex; /* Flexbox for two-column layout */
+  gap: 1rem; /* Space between aside and main */
+}
+
+/* Aside Styling */
+aside {
+  flex: 1; /* Make aside take up part of the space */
+  border: var(--border);
+  padding: var(--padding);
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
 aside img {
-  width: 150px;
+  width: 100%; /* Ensure the image scales properly */
+  max-width: 150px;
   height: auto;
-  border: 1px solid black; /* Fixed border */
-  padding: 1px;
-  box-shadow: 0 0 30px gray;
   margin-bottom: 1rem;
 }
 
-main{
+/* Main Content Styling */
+main {
+  flex: 3; /* Make main content take up more space */
   border: var(--border);
-  padding: 1rem;
+  padding: var(--padding);
+  background-color: #ffffff;
 }
 
 main img {
@@ -118,10 +77,15 @@ main img {
   margin-bottom: 0.5rem;
   width: 150px;
   height: auto;
-   
 }
 
-/* Class Selectors */
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #000; /* Add a top border */
+  margin-top: 1rem;
+}
 .box {
   display: block;
   width: 100%;
