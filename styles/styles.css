@@ -40,20 +40,47 @@ nav a {
   font-weight: 700;
   padding: 0.5rem;
 }
-
+h1 {
+  display: inline-block;
+  background-color: var(--heading-background-color);
+  color: var(--heading-text-color);
+  font-family: var(--heading-font);
+  padding: var(--padding);
+  border-bottom: 2px solid #000;
+  padding-bottom: 1rem;   
+}
+h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+p {
+  padding: var(--padding); 
+  line-height: 1.4;
+}
 /* Grid Layout for Aside and Main */
 .grid {
-  display: flex; /* Flexbox for two-column layout */
+  display: grid; /* Flexbox for two-column layout */
+  align-items: center;
+  grid-template-columns: 25% 75%;
   gap: 1rem; /* Space between aside and main */
 }
 
 /* Aside Styling */
 aside {
   flex: 1; /* Make aside take up part of the space */
+  position: relative;
   border: var(--border);
   padding: var(--padding);
   background-color: #f8f8f8;
   text-align: center;
+}
+aside h2{
+position: absolute;
+left: 50%;
+transform: translateX(-50%); /* Ensure it is centered */
+color: hsl(0, 0%, 99%); /* Set the text color to white */
+z-index: 1; /* Ensure the text is above the image */
 }
 
 aside img {
@@ -61,6 +88,7 @@ aside img {
   max-width: 150px;
   height: auto;
   margin-bottom: 1rem;
+  z-index: 0; /* Ensure the image stays below the heading */
 }
 
 /* Main Content Styling */
@@ -77,6 +105,7 @@ main img {
   margin-bottom: 0.5rem;
   width: 150px;
   height: auto;
+  padding: var(--padding);
 }
 
 /* Footer Styling */
