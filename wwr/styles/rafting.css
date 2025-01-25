@@ -77,7 +77,12 @@ header nav a:hover {
     color: var(--primary-color); /* Primary color for the title */
     margin-bottom: 20px; /* Space below the title */
 }
-
+.intro .subtitle {
+    font-family: var(--heading-font); /* Use the heading font */
+    font-size: 1.5rem; /* Large title font size */
+    color: var(--primary-color); /* Primary color for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
 .intro p {
     font-size: 1rem; /* Body text size */
     color: var(--primary-color); /* Primary color for text */
