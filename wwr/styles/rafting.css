@@ -1,9 +1,9 @@
 /* Root Variables */
 :root {
-    --primary-color: #204D6F;
-    --secondary-color: #B5A1D6;
-    --accent1-color: #89985D;
-    --accent2-color: #F0E8FF;
+    --primary-color: #1E3A4F; /* Deep Slate Blue */
+    --secondary-color: #264653; /* Dark Teal */
+    --accent1-color: #E76F51; /* Rust Orange */
+    --accent2-color: #F4F1DE; /* Warm Sand */
     --heading-font: 'Sriracha', cursive;
     --text-font: 'Lexend', sans-serif;
 }
@@ -50,19 +50,21 @@ header nav {
 
 /* Navigation Links */
 header nav a {
-    color: white;
+    color: #F4F1DE; /* Off-white for better contrast */
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 header nav a:hover {
+    color: var(--accent1-color); /* Rust Orange for interaction */
     text-decoration: underline;
 }
 /* Intro Section */
 .intro {
     padding: 20px; /* Same padding as the History Section */
     background-color: white; /* White background for consistency */
+    color: var(--primary-color);
     margin: 20px auto; /* Center the section */
     border-radius: 10px; /* Rounded corners */
     width: 90%; /* Responsive width */
@@ -166,7 +168,7 @@ header nav a:hover {
 /* Footer */
 footer {
     background-color: var(--secondary-color);
-    color: white;
+    color: #F4F1DE;
     padding: 20px;
     display: flex; /* Flexbox for alignment */
     justify-content: center; /* Space between text and social links */
