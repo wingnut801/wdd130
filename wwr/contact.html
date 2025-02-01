@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="White Water Rafting Site">
+    <meta name="author" content="Jonathan Nuttall">
+    <title>White Water Rafting About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap&family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="WWR Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Company Contact Info Section -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <address>
+        <p><strong>Address:</strong> 123 River Road, Rapids City, XY 12345</p>
+        <p><strong>Phone:</strong> 1-800-123-RAFT (7238)</p>
+        <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+      </address>
+
+      <!-- Embedded Google Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37769.26173692791!2d-111.9942245689935!3d41.22451092510248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1738371873253!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profile-row">
+        <figure>
+          <img src="images/employee1.jpg" alt="Smiling Employee One" />
+          <figcaption>John Doe - River Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Smiling Employee Two" />
+          <figcaption>Jane Smith - Reservation Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Smiling Employee Three" />
+          <figcaption>Mike Johnson - Safety Officer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="process_contact.php" method="post">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Purpose (Radio Buttons) -->
+        <fieldset>
+          <legend>Purpose of the Message</legend>
+          <label>
+            <input type="radio" name="purpose" value="General Inquiry" checked />
+            General Inquiry
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="Reservation Question" />
+            Reservation Question
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="Website Suggestion" />
+            Website Suggestion
+          </label>
+        </fieldset>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Subscribe Checkbox -->
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" />
+            Please subscribe me to the monthly newsletter
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>©️ 2025 White Water Rafting Co. | Designed by Jonathan Nuttall</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://bsky.app/" target="_blank">
+                <img src="images/bluesky.svg" alt="BlueSky">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
