@@ -301,3 +301,253 @@ footer .sociallinks img:hover {
   button[type="submit"]:hover {
     background-color: #02665f;
   }
+  /* ============================
+   HERO SECTION
+   ============================ */
+.hero {
+  position: relative; 
+  width: 100%;
+  height: 60vh;       
+  overflow: hidden;
+  margin-bottom: 2rem; 
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background: url("../images/hero_banner.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Absolutely positioned heading on the hero */
+.hero-heading {
+  position: absolute;
+  top: 50%;         /* center vertically */
+  left: 50%;        /* center horizontally */
+  transform: translate(-50%, -50%); /* adjust position to exact center */
+  font-size: 2.5rem; /* adjust text size as needed */
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-family: 'Sriracha', cursive; /* or your preferred font from your import */
+  margin: 0;
+}
+/* 
+-----------------------------------
+ Newsletter & Adventure Side-by-Side
+-----------------------------------
+Container for both columns side by side
+-----------------------------------
+*/
+
+.newsletter-adventure {
+  display: flex;
+  flex-wrap: wrap;               /* Allows wrapping if viewport is too narrow */
+  gap: 2rem;                     /* Spacing between the two columns */
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 1200px;            /* Match site width (adjust as needed) */
+  margin: 0 auto;               /* Center the container */
+  padding: 2rem;
+  background-color: #f4f4f4;     /* Example background color */
+}
+
+/* Left column: newsletter */
+.newsletter-signup {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newsletter-signup h2 {
+  margin-top: 0;
+}
+
+.newsletter-signup form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter-signup label {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Right column: adventure info & button */
+.adventure-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;            /* Centers the heading, text, and button */
+}
+
+.adventure-info h2 {
+  margin-top: 0;
+}
+
+.adventure-info p {
+  margin-bottom: 1rem;
+}
+
+.adventure-info .cta-button {
+  display: inline-block;         /* Required for margin auto or text-align center */
+  background-color: #028482;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.adventure-info .cta-button:hover {
+  background-color: #02665f;
+}
+
+/* ============================
+   GRID LAYOUT (OFFERINGS)
+   ============================ */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px; 
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.offerings-grid article {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.offerings-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.offerings-grid h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+/* ========== TRIPS PAGE SECTIONS ========== */
+
+/* CTA Section at Top */
+.contact-cta {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 1200px; /* match your site’s container width */
+  border-radius: 8px;
+}
+
+.contact-cta h1 {
+  margin: 0 0 1rem;
+}
+
+.contact-cta p {
+  margin: 0 0 1.5rem;
+}
+
+.contact-cta .cta-button {
+  display: inline-block;
+  background-color: #028482;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.contact-cta .cta-button:hover {
+  background-color: #02665f;
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.trip-descriptions h2 {
+  margin-bottom: 1rem;
+}
+
+/* Grid layout for trip cards (three columns if space allows) */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* If you prefer left-aligned text in the cards */
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Table of All Trips */
+.all-trips {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.all-trips table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.all-trips th,
+.all-trips td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+/* Optional: Slightly different background color for table header */
+.all-trips thead {
+  background-color: #f4f4f4;
+}
+
+.all-trips th {
+  font-weight: bold;
+}
