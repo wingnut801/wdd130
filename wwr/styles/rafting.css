@@ -291,7 +291,7 @@ footer .sociallinks img:hover {
     width: auto;
     display: inline-block;
     padding: 0.6rem 1rem;
-    background-color: #028482;
+    background-color: #003f3c;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -399,7 +399,7 @@ Container for both columns side by side
 
 .adventure-info .cta-button {
   display: inline-block;         /* Required for margin auto or text-align center */
-  background-color: #028482;
+  background-color: #003f3c;
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
@@ -465,7 +465,7 @@ Container for both columns side by side
 
 .contact-cta .cta-button {
   display: inline-block;
-  background-color: #028482;
+  background-color: #003f3c;
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
@@ -550,4 +550,13 @@ Container for both columns side by side
 
 .all-trips th {
   font-weight: bold;
+}
+.wireframe-link {
+  color: #fff;               /* Makes the link text white */
+  text-decoration: none;     /* Remove underline if desired */
+}
+
+.wireframe-link:hover {
+  text-decoration: underline; /* Underline on hover (optional) */
+  /* color: #ccc;            If you want a lighter color on hover */
 }
